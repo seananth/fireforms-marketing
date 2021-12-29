@@ -3,7 +3,7 @@ import screenshot from "../../public/assets/branding/builder-screenshot.png";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col xl:flex-row xl:space-x-16 mt-24 items-center">
+    <section className="flex flex-col xl:flex-row xl:space-x-16 mt-24 items-center">
       <div className="text-center xl:text-left">
         <p className="text-6xl font-bold">
           Everything you need to build high converting multi-step forms.
@@ -20,6 +20,6 @@ export default function HeroSection() {
       <div className="max-w-4xl">
         <Image src={screenshot} />
       </div>
-    </div>
+    </section>
   );
 }

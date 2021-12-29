@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import Head from "next/head";
 
 import HeroSection from "../components/landing/HeroSection";
+import IntegrateSection from "../components/landing/IntegrateSection";
 
 export default function Blog({ allPosts }) {
   // const heroPost = allPosts[0]
@@ -16,6 +17,7 @@ export default function Blog({ allPosts }) {
         </Head>
         <Container>
           <HeroSection />
+          <IntegrateSection />
         </Container>
       </Layout>
     </>
