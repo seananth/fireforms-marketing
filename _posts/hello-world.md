@@ -1,5 +1,5 @@
 ---
-title: 'Learn How to Pre-render Pages Using Static Generation with Next.js'
+title: 'does tom cruise use fireforms?'
 excerpt: 'This excerpt is awesome my dude'
 coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
