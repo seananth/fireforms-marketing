@@ -5,18 +5,23 @@ import wordpress from "../../public/assets/branding/works-with/wordpress.png";
 
 export default function IntegrateSection() {
   return (
-    <section className="flex justify-between items-center	lg:px-32 mt-24">
-      <div className="w-28">
-        <Image src={webflow} />
+    <section className="pt-32">
+      <div className="text-center pb-14">
+        <p className="text-3xl	font-bold">Works on Any Platform</p>
       </div>
-      <div className="w-28">
-        <Image src={wix} />
-      </div>
-      <div className="w-28">
-        <Image src={wordpress} />
-      </div>
-      <div className="w-28">
-        <p>100+ more</p>
+      <div className="flex justify-between items-center	lg:px-32">
+        <div className="w-32">
+          <Image src={webflow} />
+        </div>
+        <div className="w-28">
+          <Image src={wix} />
+        </div>
+        <div className="w-28">
+          <Image src={wordpress} />
+        </div>
+        <div className="w-28">
+          <p className="text-xl	font-bold text-gray-500	">100+ More</p>
+        </div>
       </div>
     </section>
   );
