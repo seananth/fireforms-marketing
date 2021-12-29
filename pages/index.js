@@ -2,6 +2,8 @@ import Container from "../components/container";
 import Layout from "../components/layout";
 import Head from "next/head";
 
+import HeroSection from "../components/landing/HeroSection";
+
 export default function Blog({ allPosts }) {
   // const heroPost = allPosts[0]
   // const morePosts = allPosts.slice(1);
@@ -13,7 +15,7 @@ export default function Blog({ allPosts }) {
           <title>Fireforms Blog</title>
         </Head>
         <Container>
-            <p>start</p>
+          <HeroSection />
         </Container>
       </Layout>
     </>
