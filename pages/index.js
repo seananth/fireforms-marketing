@@ -22,6 +22,7 @@ export default function Blog({ allPosts }) {
           <IntegrateSection />
           <FeatureSection />
           <ImageTextSection />
+          <ImageTextSection orderLast/>
         </Container>
       </Layout>
     </>
