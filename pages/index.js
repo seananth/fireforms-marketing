@@ -5,6 +5,7 @@ import Head from "next/head";
 import HeroSection from "../components/landing/HeroSection";
 import IntegrateSection from "../components/landing/IntegrateSection";
 import ImageTextSection from "../components/landing/ImageTextSection";
+import FeatureSection from "../components/landing/FeatureSection";
 
 export default function Blog({ allPosts }) {
   // const heroPost = allPosts[0]
@@ -19,6 +20,7 @@ export default function Blog({ allPosts }) {
         <Container>
           <HeroSection />
           <IntegrateSection />
+          <FeatureSection />
           <ImageTextSection />
         </Container>
       </Layout>
