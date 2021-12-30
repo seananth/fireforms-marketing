@@ -23,7 +23,7 @@ export default function FeatureSection() {
   ];
 
   return (
-    <section className="pt-10">
+    <section id="feature" className="pt-16">
       <div className="bg-fireGreen flex flex-col xl:flex-row xl:space-x-32 justify-center items-center">
         {data.map((feature, index) => {
           return (

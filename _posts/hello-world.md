@@ -1,16 +1,18 @@
 ---
-title: 'does tom cruise use fireforms?'
-excerpt: 'This excerpt is awesome my dude'
+title: 'does Tom Cruise use fireforms?'
+excerpt: 'Find out now!'
 coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
-  name: Tim Neutkens
-  picture: '/assets/blog/authors/tim.jpeg'
+  name: 'Sean Säfström'
+  # picture: '/assets/blog/authors/tim.jpeg'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
 
 ## Title
+
+We dont know, what we can say is that we see no evidence that he doesnt..
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
 
