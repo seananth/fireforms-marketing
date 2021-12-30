@@ -4,7 +4,7 @@ import screenshot from "../../public/assets/branding/builder-screenshot.png";
 export default function ImageTextSection({ orderLast }) {
   if (orderLast) {
     return (
-      <section className="flex flex-col xl:flex-row xl:space-x-16 mt-32 justify-start items-center">
+      <section className="flex flex-col xl:flex-row xl:space-x-16 py-36 justify-start items-center">
         <div className="text-center max-w-lg xl:text-right xl:ml-8 order-last">
           <p className="text-4xl font-bold">
             Embeding on-brand forms has never been this simple
