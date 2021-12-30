@@ -5,7 +5,7 @@ import wordpress from "../../public/assets/branding/works-with/wordpress.png";
 
 export default function IntegrateSection() {
   return (
-    <section className="pt-32">
+    <section className="pt-20">
       <div className="text-center pb-14">
         <p className="text-2xl text-gray-500	font-bold">Works on Any Platform</p>
       </div>

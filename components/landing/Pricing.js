@@ -41,7 +41,7 @@ export default function Pricing() {
             </p>
           </div>
           <div className="flex items-center justify-center py-10">
-            <p className="font-bold text-3xl">€49</p>
+            <p className="font-bold text-3xl">€490</p>
             <p className="text-xl">/Yearly</p>
           </div>
           <ul className="text-left list-none text-xl space-y-3">

@@ -20,7 +20,7 @@ export default function FeatureSection() {
   ];
 
   return (
-    <section className="pt-40">
+    <section className="pt-10">
       <div className="bg-fireGreen flex flex-col xl:flex-row xl:space-x-32 justify-center items-center">
         {data.map((feature) => {
           return (
@@ -35,5 +35,3 @@ export default function FeatureSection() {
     </section>
   );
 }
-
-// absolute left-0 right-0
