@@ -22,9 +22,9 @@ export default function FeatureSection() {
   return (
     <section className="pt-10">
       <div className="bg-fireGreen flex flex-col xl:flex-row xl:space-x-32 justify-center items-center">
-        {data.map((feature) => {
+        {data.map((feature, index) => {
           return (
-            <div className="text-center text-white max-w-md py-32 px-8">
+            <div key={index} className="text-center text-white max-w-md py-32 px-8">
               <p>{feature.icon}</p>
               <p className="text-2xl font-bold py-2">{feature.title}</p>
               <p className="text-xl">{feature.sub}</p>

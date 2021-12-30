@@ -1,5 +1,5 @@
-import Image from "next/image";
-import BG from "../../public/assets/branding/patternBG.png";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Pricing() {
   return (
@@ -24,11 +24,36 @@ export default function Pricing() {
             <p className="text-xl">/Monthly</p>
           </div>
           <ul className="text-left list-none text-xl space-y-3">
-            <li>Drag & Drop Builder</li>
-            <li>Simple embed on any site</li>
-            <li>Unlimited - Active Forms</li>
-            <li>10,000 - Responses/Mo</li>
-            <li>GDPR Complient</li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              Drag & Drop Builder
+            </li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              Simple embed on any site
+            </li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              Unlimited - Active Forms
+            </li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              10,000 - Responses/Mo
+            </li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              GDPR Complient
+            </li>
           </ul>
           <button className="mt-8 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold ">
             Create Account
@@ -47,11 +72,36 @@ export default function Pricing() {
             <p className="text-xl">/Yearly</p>
           </div>
           <ul className="text-left list-none text-xl space-y-3">
-            <li>Drag & Drop Builder</li>
-            <li>Simple embed on any site</li>
-            <li>Unlimited - Active Forms</li>
-            <li>10,000 - Responses/Mo</li>
-            <li>GDPR Complient</li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              Drag & Drop Builder
+            </li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              Simple embed on any site
+            </li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              Unlimited - Active Forms
+            </li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              10,000 - Responses/Mo
+            </li>
+            <li className="flex items-center">
+              <div className="text-fireGreen w-6 mr-2">
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              GDPR Complient
+            </li>
           </ul>
           <button className="mt-8 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold ">
             Create Account
