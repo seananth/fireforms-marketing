@@ -7,7 +7,7 @@ export default function IntegrateSection() {
   return (
     <section className="pt-32">
       <div className="text-center pb-14">
-        <p className="text-3xl	font-bold">Works on Any Platform</p>
+        <p className="text-2xl text-gray-500	font-bold">Works on Any Platform</p>
       </div>
       <div className="flex justify-between items-center	lg:px-32">
         <div className="w-32">
