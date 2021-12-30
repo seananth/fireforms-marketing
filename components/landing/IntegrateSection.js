@@ -2,6 +2,7 @@ import Image from "next/image";
 import webflow from "../../public/assets/branding/works-with/webflow.png";
 import wix from "../../public/assets/branding/works-with/wix.png";
 import wordpress from "../../public/assets/branding/works-with/wordpress.png";
+import shopify from "../../public/assets/branding/works-with/shopify.png";
 
 export default function IntegrateSection() {
   return (
@@ -18,6 +19,9 @@ export default function IntegrateSection() {
         </div>
         <div className="w-28">
           <Image src={wordpress} />
+        </div>
+        <div className="w-28">
+          <Image src={shopify} />
         </div>
         <div className="w-28">
           <p className="text-xl	font-bold text-gray-500	">100+ More</p>

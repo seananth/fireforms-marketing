@@ -10,15 +10,12 @@ import Pricing from "../components/landing/Pricing";
 import ContactSection from "../components/landing/ContactSection";
 import BlogSection from "../components/landing/BlogSection";
 
-export default function Blog({ allPosts }) {
-  // const heroPost = allPosts[0]
-  // const morePosts = allPosts.slice(1);
-  const morePosts = allPosts;
+export default function index() {
   return (
     <>
       <Layout>
         <Head>
-          <title>Fireforms Blog</title>
+          <title>Fireforms</title>
         </Head>
         <Container>
           <HeroSection />

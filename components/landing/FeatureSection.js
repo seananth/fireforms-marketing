@@ -29,7 +29,7 @@ export default function FeatureSection() {
           return (
             <div
               key={index}
-              className="flex flex-col items-center text-center text-white max-w-md py-28 px-8"
+              className="flex flex-col items-center text-center text-white max-w-md py-20 px-8"
             >
               <div className="w-24 flex justify-center mb-2">
                 <FontAwesomeIcon icon={feature.icon} />
