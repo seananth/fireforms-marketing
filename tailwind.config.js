@@ -4,6 +4,9 @@ module.exports = {
     extend: {
       colors: {
         fireGreen: "#25D366",
+        fireBlue: "#0071E3",
+        fireRed: "#F51137",
+        fireOrange: "#faa641",
         "accent-1": "#FAFAFA",
         "accent-2": "#EAEAEA",
         "accent-7": "#333",
