@@ -20,9 +20,11 @@ export default function Blog({ allPosts }) {
         <Container>
           <HeroSection />
           <IntegrateSection />
-          <FeatureSection />
+        </Container>
+        <FeatureSection />
+        <Container>
           <ImageTextSection />
-          <ImageTextSection orderLast/>
+          <ImageTextSection orderLast />
         </Container>
       </Layout>
     </>
