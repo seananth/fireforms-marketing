@@ -5,13 +5,14 @@ export default function ImageTextSection({ orderLast }) {
   if (orderLast) {
     return (
       <section className="flex flex-col xl:flex-row xl:space-x-16 mt-32 justify-start items-center">
-        <div className="text-center max-w-lg xl:text-right order-last">
-          <p className="text-3xl font-bold">
-            Everything you need to build high converting multi-step forms.
+        <div className="text-center max-w-lg xl:text-right xl:ml-8 order-last">
+          <p className="text-4xl font-bold">
+            Embeding on-brand forms has never been this simple
           </p>
           <p className="text-2xl my-4 font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in
-            autem repellendus nesciunt quas quibusdam delectus qua
+            There is no need to get technical, with fireforms embeding is a
+            breeze and your forms will look like they where made for your
+            website.
           </p>
         </div>
 
@@ -24,16 +25,17 @@ export default function ImageTextSection({ orderLast }) {
     return (
       <section className="flex flex-col xl:flex-row xl:space-x-16 mt-32 justify-center items-center">
         <div className="text-center max-w-lg xl:text-left order-last xl:order-first">
-          <p className="text-3xl font-bold">
-            Everything you need to build high converting multi-step forms.
+          <p className="text-4xl font-bold">
+            Forms your visitors will actually answer
           </p>
           <p className="text-2xl my-4 font-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in
-            autem repellendus nesciunt quas quibusdam delectus qua
+            We believe that everyone should have access to clean and effective
+            forms. You shouldn't have to hire a developer to enjoy the benefits
+            of a professional multistep form.
           </p>
         </div>
 
-        <div className="max-w-2xl">
+        <div className="max-w-2xl pl-0">
           <Image src={screenshot} />
         </div>
       </section>
