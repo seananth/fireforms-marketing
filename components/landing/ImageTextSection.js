@@ -3,7 +3,7 @@ import screenshot from "../../public/assets/branding/builder-screenshot.png";
 
 export default function ImageTextSection() {
   return (
-    <section className="flex flex-col xl:flex-row xl:space-x-16 mt-24 items-center">
+    <section className="flex flex-col xl:flex-row xl:space-x-16 mt-24 justify-center items-center">
       <div className="text-center max-w-lg xl:text-left">
         <p className="text-3xl font-bold">
           Everything you need to build high converting multi-step forms.
