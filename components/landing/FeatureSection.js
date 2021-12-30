@@ -10,7 +10,7 @@ export default function FeatureSection() {
     {
       icon: "icon",
       title: "No code",
-      sub: "Hiring developers is expensive and time consuming, with fireforms we've done the hard work for you.",
+      sub: "Hiring developers is expensive and time consuming, with Fireforms we've done the hard work for you.",
     },
     {
       icon: "icon",

@@ -7,10 +7,10 @@ export default function ImageTextSection({ orderLast }) {
       <section className="flex flex-col xl:flex-row xl:space-x-16 py-36 justify-start items-center">
         <div className="text-center max-w-lg xl:text-right xl:ml-8 order-last">
           <p className="text-4xl font-bold">
-            Embeding on-brand forms has never been this simple
+            Embedding on-brand forms has never been this simple
           </p>
           <p className="text-2xl my-4 font-normal">
-            There is no need to get technical, with fireforms embeding is a
+            There is no need to get technical, with fireforms embedding is a
             breeze and your forms will look like they where made for your
             website.
           </p>
@@ -31,7 +31,7 @@ export default function ImageTextSection({ orderLast }) {
           <p className="text-2xl my-4 font-normal">
             We believe that everyone should have access to clean and effective
             forms. You shouldn't have to hire a developer to enjoy the benefits
-            of a professional multistep form.
+            of a professional multi-step form.
           </p>
         </div>
 

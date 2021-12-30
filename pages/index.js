@@ -8,6 +8,7 @@ import ImageTextSection from "../components/landing/ImageTextSection";
 import FeatureSection from "../components/landing/FeatureSection";
 import Pricing from "../components/landing/Pricing";
 import ContactSection from "../components/landing/ContactSection";
+import BlogSection from "../components/landing/BlogSection";
 
 export default function Blog({ allPosts }) {
   // const heroPost = allPosts[0]
@@ -29,6 +30,7 @@ export default function Blog({ allPosts }) {
           <ImageTextSection orderLast />
           <Pricing />
         </Container>
+        <BlogSection />
         <ContactSection />
       </Layout>
     </>

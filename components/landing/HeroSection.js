@@ -9,8 +9,7 @@ export default function HeroSection() {
           Everything you need to build high converting multi-step forms.
         </p>
         <p className="text-2xl my-4 font-normal">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in autem
-          repellendus nesciunt quas quibusdam delectus qua
+          From simple contact forms to advanced lead generation. Optimize for conversion with the next generation multi-step forms.
         </p>
         <button className="mb-4 mt-2 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold hover:scale-105">
           Get Started for Free
