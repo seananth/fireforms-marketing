@@ -5,7 +5,7 @@ import embedMock from "../../public/assets/branding/embed-mock-v1.png";
 export default function ImageTextSection({ orderLast }) {
   if (orderLast) {
     return (
-      <section className="flex flex-col xl:mt-8 xl:flex-row xl:space-x-16 py-36 justify-start items-center">
+      <section className="flex flex-col xl:mt-8 xl:flex-row xl:space-x-16 pb-4 pt-12 xl:py-36 justify-start items-center">
         <div className="text-center max-w-lg xl:text-right xl:ml-8 order-last">
           <p className="text-4xl font-bold">
             Embedding on-brand forms has never been this simple
@@ -24,7 +24,7 @@ export default function ImageTextSection({ orderLast }) {
     );
   } else {
     return (
-      <section className="flex flex-col xl:flex-row xl:space-x-16 mt-32 justify-center items-center">
+      <section className="flex flex-col xl:flex-row xl:space-x-16 mt-12 xl:mt-32 justify-center items-center">
         <div className="text-center max-w-lg xl:text-left order-last xl:order-first mt-4 lg:mt-0">
           <p className="text-4xl font-bold">
             Forms your visitors will actually answer
