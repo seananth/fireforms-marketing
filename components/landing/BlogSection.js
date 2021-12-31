@@ -7,11 +7,13 @@ export default function BlogSection() {
     <section className="pt-10">
       <div className="bg-fireGreen py-28 flex justify-center">
         <Link href="/blog">
-          <div className="flex items-end text-white cursor-pointer">
-            <p className="font-bold text-4xl">Learn more on our blog</p>
-            <div className="ml-4 w-8 flex items-center">
+          <div className="flex items-end text-white cursor-pointer mx-8">
+            <p className="font-bold text-4xl flex items-end">
+              Learn more on our blog
+            </p>
+            <span className="ml-4 w-8 ">
               <FontAwesomeIcon icon={faArrowRight} />
-            </div>
+            </span>
           </div>
         </Link>
       </div>
