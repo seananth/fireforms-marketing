@@ -9,7 +9,7 @@ export default function Pricing() {
         <p className="text-2xl text-fireGreen font-bold mb-2">
           EARLY BIRD SALE
         </p>
-        <p className="text-4xl font-bold">Choose Your Pricing Plan</p>
+        <p className="text-4xl font-bold text-center">Choose Your Pricing Plan</p>
       </div>
       <div className="flex flex-col space-y-6 lg:space-y-0 lg:flex-row xl:justify-center items-center mt-8">
         {/* monthly */}
