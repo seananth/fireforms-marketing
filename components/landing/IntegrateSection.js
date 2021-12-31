@@ -10,20 +10,27 @@ export default function IntegrateSection() {
       <div className="text-center pb-14">
         <p className="text-2xl text-gray-500	font-bold">Works on Any Platform</p>
       </div>
-      <div className="flex justify-between items-center	lg:px-32">
-        <div className="w-32">
-          <Image src={webflow} />
+      <div className="flex flex-col md:flex-row md:space-x-10 justify-center items-center	lg:px-32">
+        <div className="flex space-x-6 md:space-x-10">
+          <div className="w-32">
+            <Image src={webflow} />
+          </div>
+
+          <div className="w-28">
+            <Image src={shopify} />
+          </div>
         </div>
-        <div className="w-28">
-          <Image src={wix} />
+
+        <div className="flex items-center space-x-6 md:space-x-10">
+          <div className="w-28">
+            <Image src={wordpress} />
+          </div>
+          <div className="w-28">
+            <Image src={wix} />
+          </div>
         </div>
-        <div className="w-28">
-          <Image src={wordpress} />
-        </div>
-        <div className="w-28">
-          <Image src={shopify} />
-        </div>
-        <div className="w-28">
+
+        <div className="w-28 mt-1">
           <p className="text-xl	font-bold text-gray-500	">100+ More</p>
         </div>
       </div>
