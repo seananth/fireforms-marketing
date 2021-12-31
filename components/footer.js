@@ -17,11 +17,11 @@ export default function Footer() {
           <div className="mb-4">
             <a href="/">Home</a>
             <Link href="/terms">
-              <a className="mx-4">
-                Terms of Service
-              </a>
+              <a className="mx-4">Terms of Service</a>
             </Link>
-            <a href="#">Support</a>
+            <Link href="/contact" target="_blank">
+              <a>Support</a>
+            </Link>
           </div>
           <div>copyright {year} fireforms AB</div>
         </div>
