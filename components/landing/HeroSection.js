@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import screenshot from "../../public/assets/branding/builder-screenshot.png";
+import screenshot from "../../public/assets/branding/builder-mock-v2.png";
 
 export default function HeroSection() {
   return (
@@ -20,7 +20,7 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      <div className="max-w-4xl">
+      <div className="max-w-4xl shadow-sm rounded-xl">
         <Image src={screenshot} />
       </div>
     </section>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import settingsMock from "../../public/assets/branding/settings-mock-v1.png";
 import screenshot from "../../public/assets/branding/builder-screenshot.png";
 
 export default function ImageTextSection({ orderLast }) {
@@ -35,8 +36,8 @@ export default function ImageTextSection({ orderLast }) {
           </p>
         </div>
 
-        <div className="max-w-2xl pl-0">
-          <Image src={screenshot} />
+        <div className="max-w-2xl pl-0 shadow-sm rounded-lg">
+          <Image src={settingsMock} />
         </div>
       </section>
     );
