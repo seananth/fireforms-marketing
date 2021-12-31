@@ -9,12 +9,14 @@ export default function Pricing() {
         <p className="text-2xl text-fireGreen font-bold mb-2">
           EARLY BIRD SALE
         </p>
-        <p className="text-4xl font-bold text-center">Choose Your Pricing Plan</p>
+        <p className="text-4xl font-bold text-center">
+          Choose Your Pricing Plan
+        </p>
       </div>
       <div className="flex flex-col space-y-6 lg:space-y-0 lg:flex-row xl:justify-center items-center mt-8">
         {/* monthly */}
         <Link href="https://app.fireforms.io/register">
-          <div className="shadow hover:shadow-sm xl:mr-10 lg:mr-5 flex flex-col items-center px-24 py-8 border rounded-3xl hover:scale-105 hover:cursor-pointer">
+          <div className="shadow hover:shadow-sm xl:mr-10 lg:mr-5 flex flex-col items-center mx-2 lg:mx-0 px-6 lg:px-24 py-8 border rounded-3xl hover:scale-105 hover:cursor-pointer">
             <div className="text-center">
               <p className="text-4xl">Early Bird Monthly</p>
               <p className="text-xl py-1 text-fireGreen mt-2 font-bold">
@@ -65,7 +67,7 @@ export default function Pricing() {
         </Link>
         {/* Yearly */}
         <Link href="https://app.fireforms.io/register">
-          <div className="shadow hover:shadow-sm xl:ml-10 lg:ml-5 flex flex-col items-center px-28 py-8 lg:py-10 xl:py-8 border rounded-3xl hover:scale-105 hover:cursor-pointer">
+          <div className="shadow hover:shadow-sm xl:ml-10 lg:ml-5 flex flex-col items-center mx-2 lg:mx-0 px-6 lg:px-24 py-8 lg:py-10 xl:py-8 border rounded-3xl hover:scale-105 hover:cursor-pointer">
             <div className="text-center">
               <p className="text-4xl">Early Bird Yearly</p>
               <p className="text-xl py-1 text-fireGreen mt-2 font-bold">
