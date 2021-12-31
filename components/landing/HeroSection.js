@@ -13,11 +13,11 @@ export default function HeroSection() {
           From simple contact forms to advanced lead generation. Optimize for
           conversion with the next generation multi-step forms.
         </p>
-          <Link href="#feature">
-            <button className="mb-4 mt-2 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold hover:scale-105">
-              Get Started for Free
-            </button>
-          </Link>
+        <Link href="https://app.fireforms.io/register">
+          <button className="mb-4 mt-2 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold hover:scale-105">
+            Start My 7 Day Free Trial
+          </button>
+        </Link>
       </div>
 
       <div className="max-w-4xl shadow-sm rounded-xl">

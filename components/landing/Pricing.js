@@ -61,7 +61,7 @@ export default function Pricing() {
             </ul>
 
             <button className="mt-8 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold ">
-              Create Account
+              Start My 7 Day Free Trial
             </button>
           </div>
         </Link>
@@ -112,7 +112,7 @@ export default function Pricing() {
             </ul>
 
             <button className="mt-8 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold ">
-              Create Account
+              Start My 7 Day Free Trial
             </button>
           </div>
         </Link>
