@@ -28,6 +28,7 @@ export default function index() {
           <Pricing />
         </Container>
         <BlogSection />
+        <ContactSection />
       </Layout>
     </>
   );
