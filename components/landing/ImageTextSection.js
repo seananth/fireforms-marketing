@@ -1,11 +1,11 @@
 import Image from "next/image";
 import settingsMock from "../../public/assets/branding/settings-mock-v1.png";
-import screenshot from "../../public/assets/branding/builder-screenshot.png";
+import embedMock from "../../public/assets/branding/embed-mock-v1.png";
 
 export default function ImageTextSection({ orderLast }) {
   if (orderLast) {
     return (
-      <section className="flex flex-col xl:flex-row xl:space-x-16 py-36 justify-start items-center">
+      <section className="flex flex-col xl:mt-8 xl:flex-row xl:space-x-16 py-36 justify-start items-center">
         <div className="text-center max-w-lg xl:text-right xl:ml-8 order-last">
           <p className="text-4xl font-bold">
             Embedding on-brand forms has never been this simple
@@ -18,7 +18,7 @@ export default function ImageTextSection({ orderLast }) {
         </div>
 
         <div className="max-w-2xl">
-          <Image src={screenshot} />
+          <Image src={embedMock} />
         </div>
       </section>
     );
