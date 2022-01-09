@@ -13,20 +13,20 @@ export default function IntegrateSection() {
       <div className="flex flex-col md:flex-row md:space-x-10 justify-center items-center	lg:px-32">
         <div className="flex space-x-6 md:space-x-10">
           <div className="w-32">
-            <Image src={webflow} />
+            <Image src={webflow} priority={true}/>
           </div>
 
           <div className="w-28">
-            <Image src={shopify} />
+            <Image src={shopify} priority={true}/>
           </div>
         </div>
 
         <div className="flex items-center space-x-6 md:space-x-10">
           <div className="w-28">
-            <Image src={wordpress} />
+            <Image src={wordpress} priority={true}/>
           </div>
           <div className="w-28">
-            <Image src={wix} />
+            <Image src={wix} priority={true}/>
           </div>
         </div>
 
