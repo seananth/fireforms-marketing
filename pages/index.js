@@ -28,7 +28,7 @@ export default function index() {
           <Pricing />
         </Container>
         <BlogSection />
-        {/* <ContactSection /> */}
+        <ContactSection />
       </Layout>
     </>
   );

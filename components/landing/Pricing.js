@@ -100,11 +100,12 @@ export default function Pricing() {
     <section id="pricing" className="flex flex-col my-24">
       <div className="flex flex-col items-center pb-8">
         <p className="text-2xl text-fireGreen font-bold mb-2">
-          EARLY BIRD SALE
+          Pricing
         </p>
         <p className="text-4xl font-bold text-center">
           Choose Your Pricing Plan
         </p>
+        <p class="mt-2 italic">psst! get two months free with a yearly plan!</p>
         <div>
           <div class="flex items-center justify-center pt-4">
             <div
@@ -133,7 +134,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-6 lg:space-y-0 lg:flex-row xl:justify-center items-center mt-6">
+      <div className="flex flex-col space-y-6 lg:space-y-0 lg:flex-row xl:justify-center items-center mt-4">
         {/* pricing cards */}
 
         {state.pricingPlan.map((card) => {
@@ -142,7 +143,7 @@ export default function Pricing() {
               <Link href="https://app.fireforms.io/register">
                 <div className="shadow hover:shadow-sm xl:mr-10 lg:mr-5 flex flex-col items-center mx-2 lg:mx-0 px-6 lg:px-24 py-8 border rounded-3xl hover:scale-105 hover:cursor-pointer">
                   <div className="text-center">
-                    <p className="text-4xl">{card.title}</p>
+                    <p className="text-3xl font-bold">{card.title}</p>
                     <p className="text-xl py-1 text-fireGreen mt-2 font-bold">
                       {card.message}
                     </p>
