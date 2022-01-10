@@ -1,69 +1,99 @@
 import Link from "next/link";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+
+const offers = {
+  monthly: [
+    {
+      id: 1,
+      title: "Starter Monthly",
+      message: "",
+      price: "49",
+      payInterval: "Month",
+      responses: "500",
+      activeForms: "20",
+      link: "",
+    },
+    {
+      id: 2,
+      title: "Business Monthly",
+      message: "Most Popular",
+      price: "99",
+      responses: "5 000",
+      payInterval: "Month",
+      activeForms: "Unlimited",
+      link: "",
+    },
+    {
+      id: 3,
+      title: "Pro Monthly",
+      message: "",
+      price: "249",
+      responses: "10 000",
+      payInterval: "Month",
+      activeForms: "Unlimited",
+      link: "",
+    },
+  ],
+  annual: [
+    {
+      id: 1,
+      title: "Starter Yearly",
+      message: "",
+      price: "490",
+      payInterval: "Year",
+      responses: "500",
+      activeForms: "20",
+      link: "",
+    },
+
+    {
+      id: 2,
+      title: "Business Yearly",
+      message: "Most Popular",
+      price: "990",
+      payInterval: "Year",
+      responses: "5 000",
+      activeForms: "Unlimited",
+      link: "",
+    },
+
+    {
+      id: 3,
+      title: "Pro Yearly",
+      message: "",
+      price: "2490",
+      payInterval: "Year",
+      responses: "10 000",
+      activeForms: "Unlimited",
+      link: "",
+    },
+  ],
+};
 
 export default function Pricing() {
-  const offers = {
-    monthly: [
-      {
-        id: 1,
-        title: "Starter Monthly",
-        message: "",
-        price: "49",
-        responses: "500",
-        activeForms: "20",
-        link: "",
-      },
-      {
-        id: 2,
-        title: "Business Monthly",
-        message: "Most Popular",
-        price: "99",
-        responses: "5 000",
-        activeForms: "Unlimited",
-        link: "",
-      },
-      {
-        id: 3,
-        title: "Pro Monthly",
-        message: "",
-        price: "249",
-        responses: "10 000",
-        activeForms: "Unlimited",
-        link: "",
-      },
-    ],
-    yearly: [
-      {
-        id: 1,
-        title: "Starter Yearly",
-        message: "",
-        price: "490",
-        responses: "500",
-        activeForms: "20",
-        link: "",
-      },
+  const { monthly, annual } = offers;
 
-      {
-        id: 2,
-        title: "Business Yearly",
-        message: "Most Popular",
-        price: "990",
-        responses: "5 000",
-        activeForms: "Unlimited",
-        link: "",
-      },
+  const [state, setState] = useState({
+    active: "monthly",
+    pricingPlan: monthly,
+  });
 
-      {
-        id: 3,
-        title: "Pro Yearly",
-        message: "",
-        price: "2490",
-        responses: "10 000",
-        activeForms: "Unlimited",
-        link: "",
-      },
-    ],
+  const handlePricingPlan = (plan) => {
+    if (plan === "annual") {
+      setState({
+        ...state,
+        active: "annual",
+        pricingPlan: annual,
+      });
+    } else {
+      setState({
+        ...state,
+        active: "monthly",
+        pricingPlan: monthly,
+      });
+    }
   };
 
   return (
@@ -76,33 +106,37 @@ export default function Pricing() {
           Choose Your Pricing Plan
         </p>
         <div>
-
           <div class="flex items-center justify-center pt-4">
             <div
               class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg"
               role="group"
             >
               <button
+                onClick={() => handlePricingPlan("monthly")}
                 type="button"
-                class="rounded-l-lg inline-block px-6 py-4 bg-gray-800 text-white font-bold text-xs leading-tight uppercase hover:bg-fireGreen focus:bg-fireGreen focus:outline-none focus:ring-0 active:bg-fireGreen transition duration-150 ease-in-out"
+                class={`rounded-l-lg inline-block px-6 py-4 ${
+                  state.active == "monthly" ? "bg-fireGreen" : "bg-neutral-500"
+                } text-white font-bold text-xs leading-tight uppercase hover:bg-fireGreen focus:bg-fireGreen focus:outline-none focus:ring-0 transition duration-150 ease-in-out`}
               >
-                Monthly
+                Pay Monthly
               </button>
               <button
+                onClick={() => handlePricingPlan("annual")}
                 type="button"
-                class=" rounded-r-lg inline-block px-6 py-4 bg-gray-800 text-white font-bold text-xs leading-tight uppercase hover:bg-fireGreen focus:bg-fireGreen focus:outline-none focus:ring-0 active:bg-fireGreen transition duration-150 ease-in-out"
+                class={`rounded-r-lg inline-block px-6 py-4 ${
+                  state.active == "annual" ? "bg-fireGreen" : "bg-neutral-500"
+                } text-white font-bold text-xs leading-tight uppercase hover:bg-fireGreen focus:bg-fireGreen focus:outline-none focus:ring-0 transition duration-150 ease-in-out`}
               >
-                Annually
+                Pay Yearly
               </button>
             </div>
           </div>
-
         </div>
       </div>
       <div className="flex flex-col space-y-6 lg:space-y-0 lg:flex-row xl:justify-center items-center mt-6">
         {/* pricing cards */}
 
-        {offers.monthly.map((card) => {
+        {state.pricingPlan.map((card) => {
           return (
             <div key={card.id}>
               <Link href="https://app.fireforms.io/register">
@@ -113,9 +147,9 @@ export default function Pricing() {
                       {card.message}
                     </p>
                   </div>
-                  <div className="flex items-center justify-center py-10">
+                  <div className="flex items-end justify-center py-10">
                     <p className="font-bold text-3xl">€{card.price}</p>
-                    <p className="text-xl">/Monthly</p>
+                    <p className="text-xl">/{card.payInterval}</p>
                   </div>
                   <ul className="text-left list-none text-xl space-y-3">
                     <li className="flex items-center">

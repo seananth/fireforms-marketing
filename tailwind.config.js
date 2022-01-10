@@ -7,6 +7,7 @@ module.exports = {
         fireBlue: "#0071E3",
         fireRed: "#F51137",
         fireOrange: "#faa641",
+        fireGray: "#888888",
         "accent-1": "#FAFAFA",
         "accent-2": "#EAEAEA",
         "accent-7": "#333",
