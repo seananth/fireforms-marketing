@@ -4,7 +4,7 @@ import fs from 'fs';
 const Sitemap = () => {};
 
 export const getServerSideProps = ({ res }) => {
-  const baseUrl = "http://localhost:3000"
+  const baseUrl = "https://fireforms.io"
   
 //   {
 //     production: "https://fireforms.io",
