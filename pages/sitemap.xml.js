@@ -1,14 +1,15 @@
 import React from "react";
-import fs from 'fs';
+import fs from "fs";
 
 const Sitemap = () => {};
 
 export const getServerSideProps = ({ res }) => {
-  const baseUrl = "https://fireforms.io"
-  
-//   {
-//     production: "https://fireforms.io",
-//   }[development];
+  const baseUrl = "https://fireforms.io/";
+
+  //   {
+  // dev: "http://localhost:3000"
+  //     production: "https://fireforms.io",
+  //   }[development];
 
   const staticPages = fs
     .readdirSync("pages")
