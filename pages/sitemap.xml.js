@@ -12,7 +12,7 @@ export const getServerSideProps = ({ res }) => {
   //   }[development];
 
   const staticPages = fs
-    .readdirSync("pages")
+    .readdirSync("./")
     .filter((staticPage) => {
       return !["_app.js", "_document.js", "sitemap.xml.js"].includes(
         staticPage
@@ -21,6 +21,7 @@ export const getServerSideProps = ({ res }) => {
     .map((staticPagePath) => {
       return `${baseUrl}/${staticPagePath}`;
     });
+  //
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
