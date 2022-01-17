@@ -2,7 +2,7 @@
 title: "Why You Should Use Multi Step Forms and Why it Will Increase Your Conversion Rate"
 excerpt: "Multi step forms are not some new invention, they’ve been used by marketers for the last 15 years with great results. In this article I'll explain why you should use them, and how to get the most out of your forms."
 coverImage: "/assets/blog/fireforms-guides/covers/Why-use-multi-step-forms.jpeg"
-date: "2021-01-09"
+date: "2021-01-02"
 author:
   name: "Sean Säfström"
   # picture: ''
