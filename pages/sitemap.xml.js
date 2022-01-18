@@ -12,7 +12,7 @@ export const getServerSideProps = ({ res }) => {
   //production: "https://fireforms.io",
 
   const staticPages = fs
-    .readdirSync("/")
+    .readdirSync("./")
     .filter((staticPage) => {
       return !["_app.js", "_document.js", "sitemap.xml.js"].includes(
         staticPage
@@ -37,18 +37,6 @@ export const getServerSideProps = ({ res }) => {
             `;
           })
           .join("")}
-          ${allPosts
-            .map((post) => {
-              return `
-              <url>
-                <loc>${baseUrl}/documents/${post.slug}</loc>
-                <lastmod>${post.date}</lastmod>
-                <changefreq>monthly</changefreq>
-                <priority>1.0</priority>
-              </url>
-            `;
-            })
-            .join("")}
       </urlset>
     `;
 
@@ -62,3 +50,16 @@ export const getServerSideProps = ({ res }) => {
 };
 
 export default Sitemap;
+
+// ${allPosts
+//   .map((post) => {
+//     return `
+//     <url>
+//       <loc>${baseUrl}/documents/${post.slug}</loc>
+//       <lastmod>${post.date}</lastmod>
+//       <changefreq>monthly</changefreq>
+//       <priority>1.0</priority>
+//     </url>
+//   `;
+//   })
+//   .join("")}
