@@ -14,7 +14,7 @@ export const getServerSideProps = ({ res }) => {
 
 
   const staticPages = fs
-    .readdirSync("./pages")
+    .readdirSync("./")
     .filter((staticPage) => {
       return !["_app.js", "_document.js", "sitemap.xml.js"].includes(
         staticPage
