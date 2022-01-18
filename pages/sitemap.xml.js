@@ -8,13 +8,11 @@ export const getServerSideProps = ({ res }) => {
   const baseUrl = "https://fireforms.io";
   const allPosts = getAllPosts(["date", "slug"]);
 
-
   //dev: "http://localhost:3000"
   //production: "https://fireforms.io",
 
-
   const staticPages = fs
-    .readdirSync("./")
+    .readdirSync("/")
     .filter((staticPage) => {
       return !["_app.js", "_document.js", "sitemap.xml.js"].includes(
         staticPage
