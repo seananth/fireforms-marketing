@@ -12,7 +12,7 @@ export const getServerSideProps = ({ res }) => {
   //production: "https://fireforms.io",
 
   const staticPages = fs
-    .readdirSync("./pages")
+    .readdirSync("/pages")
     .filter((staticPage) => {
       return !["_app.js", "_document.js", "sitemap.xml.js"].includes(
         staticPage
