@@ -1,12 +1,12 @@
 import React from "react";
 import fs from "fs";
-import { getAllPosts } from "../lib/api";
+// import { getAllPosts } from "../lib/api";
 
 const Sitemap = () => {};
 
 export const getServerSideProps = ({ res }) => {
   const baseUrl = "https://fireforms.io";
-  const allPosts = getAllPosts(["date", "slug"]);
+  // const allPosts = getAllPosts(["date", "slug"]);
 
   //dev: "http://localhost:3000"
   //production: "https://fireforms.io",
@@ -21,7 +21,6 @@ export const getServerSideProps = ({ res }) => {
     .map((staticPagePath) => {
       return `${baseUrl}/${staticPagePath}`;
     });
-  //
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
