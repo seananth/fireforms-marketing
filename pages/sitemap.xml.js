@@ -1,18 +1,20 @@
 import React from "react";
 import fs from "fs";
+import { getAllPosts } from "../lib/api";
 
 const Sitemap = () => {};
 
 export const getServerSideProps = ({ res }) => {
-  const baseUrl = "https://fireforms.io/";
+  const baseUrl = "https://fireforms.io";
+  const allPosts = getAllPosts(["date", "slug"]);
 
-  //   {
-  // dev: "http://localhost:3000"
-  //     production: "https://fireforms.io",
-  //   }[development];
+
+  //dev: "http://localhost:3000"
+  //production: "https://fireforms.io",
+
 
   const staticPages = fs
-    .readdirSync("./")
+    .readdirSync("./pages")
     .filter((staticPage) => {
       return !["_app.js", "_document.js", "sitemap.xml.js"].includes(
         staticPage
@@ -37,6 +39,18 @@ export const getServerSideProps = ({ res }) => {
             `;
           })
           .join("")}
+          ${allPosts
+            .map((post) => {
+              return `
+              <url>
+                <loc>${baseUrl}/documents/${post.slug}</loc>
+                <lastmod>${post.date}</lastmod>
+                <changefreq>monthly</changefreq>
+                <priority>1.0</priority>
+              </url>
+            `;
+            })
+            .join("")}
       </urlset>
     `;
 
