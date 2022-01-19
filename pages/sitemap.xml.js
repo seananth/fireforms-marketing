@@ -30,6 +30,10 @@ export const getServerSideProps = ({ res }) => {
       link: "https://fireforms.io/posts/Why-You-Should-Use-Multi-Step-Forms",
       date: "2021-01-02",
     },
+    {
+      link: "https://fireforms.io/posts/embed-multi-step-form-shopify",
+      date: "2021-01-19",
+    },
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
