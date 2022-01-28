@@ -134,14 +134,14 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-6 lg:space-y-0 lg:flex-row xl:justify-center items-center mt-4">
         {/* pricing cards */}
+      <div className="flex flex-col space-y-6 lg:space-y-0 lg:space-x-5 lg:flex-row xl:justify-center items-center mt-4">
 
         {state.pricingPlan.map((card) => {
           return (
             <div key={card.id}>
               <Link href="https://app.fireforms.io/register">
-                <div className="shadow hover:shadow-sm xl:mr-10 lg:mr-5 flex flex-col items-center mx-2 lg:mx-0 px-6 lg:px-24 py-8 border rounded-3xl hover:scale-105 hover:cursor-pointer">
+                <div className="shadow hover:shadow-sm flex flex-col items-center px-14 lg:px-16 py-8 border rounded-3xl hover:scale-105 hover:cursor-pointer">
                   <div className="text-center">
                     <p className="text-3xl font-bold">{card.title}</p>
                     <p className="text-xl py-1 text-fireGreen mt-2 font-bold">
@@ -152,7 +152,7 @@ export default function Pricing() {
                     <p className="font-bold text-3xl">€{card.price}</p>
                     <p className="text-xl">/{card.payInterval}</p>
                   </div>
-                  <ul className="text-left list-none text-xl space-y-3">
+                  <ul className="text-left list-none space-y-3">
                     <li className="flex items-center">
                       <div className="text-fireGreen w-6 mr-2">
                         <FontAwesomeIcon icon={faCheckCircle} />
@@ -184,7 +184,7 @@ export default function Pricing() {
                       GDPR Complient
                     </li>
                   </ul>
-                  <button className="mt-8 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold ">
+                  <button className="mt-8 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold">
                     Start My 7 Day Free Trial
                   </button>
                 </div>

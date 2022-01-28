@@ -20,7 +20,7 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      <div className="max-w-4xl shadow-sm rounded-xl">
+      <div className="max-w-2xl shadow-sm rounded-xl">
         <Image src={screenshot}  priority={true}/>
       </div>
     </section>

@@ -19,6 +19,9 @@ export default function index() {
         </Head>
         <Container>
             <h1>You dont need to be a developer to build multi step forms!</h1>
+            <h1>Step 1 plan it</h1>
+            <h1>Step 2 Build it</h1>
+            <h1>Step 3 Launch it!</h1>
         </Container>
       </Layout>
     </>
