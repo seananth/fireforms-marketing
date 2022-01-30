@@ -12,7 +12,7 @@ const offers = {
       price: "49",
       payInterval: "Month",
       responses: "500",
-      activeForms: "20",
+      activeForms: "5",
       link: "",
     },
     {
@@ -20,9 +20,9 @@ const offers = {
       title: "Business Monthly",
       message: "Most Popular",
       price: "99",
-      responses: "5 000",
+      responses: "1000",
       payInterval: "Month",
-      activeForms: "Unlimited",
+      activeForms: "10",
       link: "",
     },
     {
@@ -30,9 +30,9 @@ const offers = {
       title: "Pro Monthly",
       message: "",
       price: "249",
-      responses: "10 000",
+      responses: "2500",
       payInterval: "Month",
-      activeForms: "Unlimited",
+      activeForms: "25",
       link: "",
     },
   ],
@@ -44,7 +44,7 @@ const offers = {
       price: "490",
       payInterval: "Year",
       responses: "500",
-      activeForms: "20",
+      activeForms: "5",
       link: "",
     },
 
@@ -54,8 +54,8 @@ const offers = {
       message: "Most Popular",
       price: "990",
       payInterval: "Year",
-      responses: "5 000",
-      activeForms: "Unlimited",
+      responses: "1000",
+      activeForms: "10",
       link: "",
     },
 
@@ -65,8 +65,8 @@ const offers = {
       message: "",
       price: "2490",
       payInterval: "Year",
-      responses: "10 000",
-      activeForms: "Unlimited",
+      responses: "2500",
+      activeForms: "25",
       link: "",
     },
   ],
@@ -184,7 +184,7 @@ export default function Pricing() {
                       GDPR Complient
                     </li>
                   </ul>
-                  <button className="mt-8 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold">
+                  <button className="text-sm lg:text-md mt-8 bg-fireGreen p-4 rounded-2xl shadow-sm text-white font-bold">
                     Start My 7 Day Free Trial
                   </button>
                 </div>
