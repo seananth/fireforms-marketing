@@ -9,6 +9,7 @@ import FeatureSection from "../components/landing/FeatureSection";
 import Pricing from "../components/landing/Pricing";
 import ContactSection from "../components/landing/ContactSection";
 import BlogSection from "../components/landing/BlogSection";
+import ConversionCalculator from "../components/landing/ConversionCalculator";
 
 export default function index() {
   return (
@@ -25,6 +26,7 @@ export default function index() {
         <Container>
           <ImageTextSection />
           <ImageTextSection orderLast />
+          <ConversionCalculator />
           <Pricing />
         </Container>
         <BlogSection />
