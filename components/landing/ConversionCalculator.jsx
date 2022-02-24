@@ -30,7 +30,7 @@ export default function ConversionCalculator() {
           {done === false ? (
             <>
               <p className="text-center text-4xl font-bold text-white">
-                Get the most out of your funnel!
+                Get The Most Out Of Your Forms!
               </p>
               <p className="text-center mb-4 text-xl font-bold text-white">
                 You wouldn't go fishing with a broken net, right?

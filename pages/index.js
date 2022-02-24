@@ -27,7 +27,7 @@ export default function index() {
           <ImageTextSection />
           <ImageTextSection orderLast />
         </Container>
-        <ConversionCalculator />
+        {/* <ConversionCalculator /> */}
         <Container>
           <Pricing />
         </Container>
