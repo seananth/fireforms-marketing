@@ -32,8 +32,11 @@ export default function ConversionCalculator() {
               <p className="text-center text-4xl font-bold text-white">
                 Get The Most Out Of Your Forms!
               </p>
-              <p className="text-center mb-4 text-xl font-bold text-white">
+              {/* <p className="text-center mb-4 text-xl font-bold text-white">
                 You wouldn't go fishing with a broken net, right?
+              </p> */}
+              <p className="text-center mb-4 text-xl font-bold text-white">
+                Enter your data to find out how fireforms could help you
               </p>
             </>
           ) : null}
@@ -130,7 +133,7 @@ export default function ConversionCalculator() {
                       Total Revenue: ${answer.revenue}
                     </p>
                   </div>
-                  <div className="border-b-4 md:border-l-4 border-dotted md:mx-4"/>
+                  <div className="border-b-4 md:border-l-4 border-dotted md:mx-4" />
                   <div className="my-4 md:mb-2 mx-2">
                     <p className="text-3xl text-white font-bold border-b-2 mb-2 text-center">
                       Using FireForms
@@ -138,32 +141,28 @@ export default function ConversionCalculator() {
 
                     <p className="text-2xl text-white font-bold">
                       Conversion Rate:{" "}
-                      {((answer.leads / answer.visitors) * 100 * 1.5).toFixed(
+                      {((answer.leads / answer.visitors) * 100 * 1.4).toFixed(
+                        2
+                      )}
+                      % -{" "}
+                      {((answer.leads / answer.visitors) * 100 * 2.2).toFixed(
                         2
                       )}
                       %
                     </p>
                     <p className="text-2xl text-white font-bold">
-                      Leads: {answer.leads * 1.5}
-                      <span className="text-sm text-success">
-                        {" "}
-                        + {answer.leads * 1.5 - answer.leads}
-                      </span>
+                      Leads: {Math.round(answer.leads * 1.4)} -{" "}
+                      {Math.round(answer.leads * 2.2)}
                     </p>
                     <p className="text-2xl text-white font-bold">
                       Total Revenue: $
                       {Math.round(
-                        (answer.revenue / answer.leads) * (answer.leads * 1.5)
+                        (answer.revenue / answer.leads) * (answer.leads * 1.4)
+                      )}{" "}
+                      - $
+                      {Math.round(
+                        (answer.revenue / answer.leads) * (answer.leads * 2.2)
                       )}
-                      <span className="text-sm text-success">
-                        {" "}
-                        +{" "}
-                        {Math.round(
-                          (answer.revenue / answer.leads) *
-                            (answer.leads * 1.5) -
-                            answer.revenue
-                        )}
-                      </span>
                     </p>
                   </div>
                 </div>
