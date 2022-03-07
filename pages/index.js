@@ -31,8 +31,9 @@ export default function index() {
         <Container>
           <Pricing />
         </Container>
+          <ContactSection formID="61d94a09d16a3d73bf17ca41" />
         <BlogSection />
-        <ContactSection />
+        {/* <ContactSection formID="619a849148859cdd82152a84" /> */}
       </Layout>
     </>
   );
