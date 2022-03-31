@@ -128,7 +128,7 @@ export default function ConversionCalculator() {
                   <div className="flex flex-col md:flex-row">
                     <div className="my-4 md:mb-2 mx-2">
                       <p className="text-3xl text-white font-bold border-b-2 mb-2 text-center">
-                        Before FireForms
+                        Before
                       </p>
                       <p className="text-2xl text-white font-bold">
                         Conversion Rate:{" "}
@@ -144,7 +144,7 @@ export default function ConversionCalculator() {
                     <div className="border-b-4 md:border-l-4 border-dotted md:mx-4" />
                     <div className="my-4 md:mb-2 mx-2">
                       <p className="text-3xl text-white font-bold border-b-2 mb-2 text-center">
-                        Using FireForms
+                        After
                       </p>
 
                       <p className="text-2xl text-white font-bold">
