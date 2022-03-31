@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       colors: {
         fireGreen: "#25D366",
+        fireGreenOpacity: "#25D36670",
         fireBlue: "#0071E3",
         fireRed: "#F51137",
         fireOrange: "#faa641",
