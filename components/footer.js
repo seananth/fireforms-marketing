@@ -1,6 +1,7 @@
 import Container from "./container";
 import Image from "next/image";
 import Link from "next/link";
+import Router from 'next/router'
 
 import logo from "../public/assets/branding/fireforms-logo.png";
 
@@ -19,7 +20,7 @@ export default function Footer() {
             <Link href="/terms">
               <a className="mx-4">Terms of Service</a>
             </Link>
-            <Link href="/contact" target="_blank">
+            <Link href="/contact" as="/contact">
               <a>Support</a>
             </Link>
           </div>

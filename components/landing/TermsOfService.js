@@ -302,7 +302,7 @@ export default function TermsOfService() {
         <p>
           Sean Säfström
           <br />
-          fireformsab@gmail.com{" "}
+          sean@fireforms.io{" "}
         </p>
       </div>
     </section>
