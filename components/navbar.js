@@ -15,13 +15,21 @@ export default function Navbar() {
             </div>
           </Link>
 
-          <Link href="https://app.fireforms.io/login">
-            <div className="flex justify-end w-48 cursor-pointer">
-              <button className="xl:mr-10 bg-fireGreen px-5 py-2 rounded-2xl shadow-sm text-white font-bold">
-                Login
-              </button>
-            </div>
-          </Link>
+          <div className="flex items-center justify-end md:space-x-8">
+            <Link href="/blog">
+              <div className="cursor-pointer">
+                <p className="text-fireGray hover:underline">Blog</p>
+              </div>
+            </Link>
+            
+            <Link href="https://app.fireforms.io/login">
+              <div className="flex justify-end cursor-pointer invisible md:visible" >
+                <button className="bg-fireGreen md:px-5 md:py-2 rounded-2xl shadow-sm text-white font-bold">
+                  Login
+                </button>
+              </div>
+            </Link>
+          </div>
         </div>
       </Container>
     </div>
