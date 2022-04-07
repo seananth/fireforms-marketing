@@ -16,13 +16,19 @@ export default function Footer() {
             <Image src={logo} />
           </div>
           <div className="mb-4">
-            <a href="/">Home</a>
+            <a href="/" className="hover:underline">
+              Home
+            </a>
             <Link href="/terms">
-              <a className="mx-4">Terms of Service</a>
+              <a className="mx-4 hover:underline">Terms of Service</a>
             </Link>
-
             <Link href="/contact">
-              <a target="_blank">Support</a>
+              <a target="_blank" className="hover:underline">
+                Support
+              </a>
+            </Link>
+            <Link href="/blog">
+              <a className="mx-4 hover:underline">Blog</a>
             </Link>
           </div>
           <div>copyright {year} fireforms AB</div>
