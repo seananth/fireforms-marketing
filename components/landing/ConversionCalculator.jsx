@@ -62,6 +62,7 @@ export default function ConversionCalculator() {
                     <input
                       className="py-3 px-2 rounded-md focus:outline-none w-full shadow-sm"
                       name="traffic"
+                      id="traffic"
                       type="number"
                       defaultValue={10000}
                       onChange={(e) =>
@@ -83,6 +84,7 @@ export default function ConversionCalculator() {
                     <input
                       className="py-3 px-2 rounded-md focus:outline-none shadow-sm"
                       name="leads"
+                      id="leads"
                       type="number"
                       defaultValue={100}
                       onChange={(e) =>
@@ -105,6 +107,7 @@ export default function ConversionCalculator() {
                     <input
                       className="py-3 px-2 rounded-md focus:outline-none shadow-sm"
                       name="rev"
+                      id="rev"
                       type="number"
                       defaultValue={10000}
                       onChange={(e) =>

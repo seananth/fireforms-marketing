@@ -18,7 +18,7 @@ export default function ImageTextSection({ orderLast }) {
         </div>
 
         <div className="max-w-2xl">
-          <Image src={embedMock} />
+          <Image src={embedMock} alt="embed multi step form" />
         </div>
       </section>
     );
@@ -38,7 +38,7 @@ export default function ImageTextSection({ orderLast }) {
         </div>
 
         <div className="max-w-2xl pl-0 shadow-sm rounded-lg">
-          <Image src={settingsMock} />
+          <Image src={settingsMock} alt="multi step form settings" />
         </div>
       </section>
     );

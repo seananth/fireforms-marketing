@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <Link href="/">
             <div className="w-48 mt-3 cursor-pointer">
-              <Image src={logo} />
+              <Image src={logo} alt="fireforms logo" />
             </div>
           </Link>
 
@@ -21,9 +21,9 @@ export default function Navbar() {
                 <p className="text-fireGray hover:underline">Blog</p>
               </div>
             </Link>
-            
+
             <Link href="https://app.fireforms.io/login">
-              <div className="flex justify-end cursor-pointer invisible md:visible" >
+              <div className="flex justify-end cursor-pointer invisible md:visible">
                 <button className="bg-fireGreen md:px-5 md:py-2 rounded-2xl shadow-sm text-white font-bold">
                   Login
                 </button>

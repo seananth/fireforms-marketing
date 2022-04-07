@@ -22,7 +22,7 @@ export default function HeroSection() {
       </div>
 
       <div className="max-w-2xl shadow-sm rounded-xl">
-        <Image src={screenshot} priority={true} />
+        <Image src={screenshot} priority={true} alt="multi step form builder preview"/>
       </div>
     </section>
   );
