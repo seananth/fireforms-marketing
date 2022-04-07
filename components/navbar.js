@@ -18,7 +18,7 @@ export default function Navbar() {
           <div className="flex items-center justify-end md:space-x-8">
             <Link href="/blog">
               <div className="cursor-pointer">
-                <p className="text-fireGray hover:underline">Blog</p>
+                <p className="hover:underline">Blog</p>
               </div>
             </Link>
 

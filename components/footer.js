@@ -13,7 +13,7 @@ export default function Footer() {
       <Container>
         <div className="py-28 flex flex-col items-center">
           <div className="max-w-xs mb-2">
-            <Image src={logo} />
+            <Image src={logo} alt="fireforms logo" />
           </div>
           <div className="mb-4">
             <a href="/" className="hover:underline">

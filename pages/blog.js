@@ -12,6 +12,11 @@ export default function Blog({ allPosts }) {
       <Layout>
         <Head>
           <title>Fireforms Blog</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+          <meta property="og:title" content="fireforms blog" key="blog" />
         </Head>
         <Container>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
