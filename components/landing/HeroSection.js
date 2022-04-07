@@ -4,8 +4,8 @@ import screenshot from "../../public/assets/branding/builder-mock-v2.png";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col xl:flex-row xl:space-x-16 mt-4 lg:mt-24 items-center">
-      <div className="text-center xl:text-left">
+    <section className="flex flex-col xl:flex-row xl:justify-evenly mt-4 lg:mt-24 items-center">
+      <div className="text-center xl:text-left max-w-lg">
         <p className="text-4xl lg:text-6xl font-bold">
           Everything you need to build{" "}
           <mark className="inline-block bg-fireGreenOpacity">high converting</mark> multi-step forms.
